@@ -58,6 +58,19 @@
             color: #555;
         }
 
+        /* 新增：给超链接设置样式，保持和原文字视觉统一，hover时有交互效果 */
+        p a {
+            color: #555;
+            text-decoration: none;
+            margin: 0 4px;
+            transition: color 0.3s ease;
+        }
+
+        p a:hover {
+            color: #007bff; /* 鼠标悬浮时变蓝色 */
+            text-decoration: underline;
+        }
+
         .cta-button {
             margin-top: 2rem;
             padding: 0.8rem 2rem;
@@ -97,7 +110,12 @@
             <img src="https://imgs.699pic.com/images/600/445/182.jpg!list1x.v2" alt="个人头像" class="avatar">
             
             <h1>路虽远，行则必达。</h1>
-            <p>三哥博客 | 三哥项目 | 天上人间</p>
+            <!-- 关键修改：拆分文字并分别加超链接 -->
+            <p>
+                <a href="https://www.nb303.top" target="_blank">三哥博客</a> | 
+                <a href="https://old-poetry-2e4b.rookiesec-4ac.workers.dev/" target="_blank">密文翻译器</a> | 
+                <a href="https://libretv-n0c.pages.dev/" target="_blank"全网VIP影视</a>
+            </p>
         </header>
 	<a href="#" class="cta-button">了解三哥</a>
 	<!-- 联系方式模块（略，与前一版本相同） -->
@@ -105,7 +123,7 @@
             <!-- ...原有内容... -->
         </section>
 <footer>
-            © 1999 简洁主页 | 天行健，自强不息。Telegram: sec303
+            © 1999 简洁主页 | 天行健，自强不息。
         </footer>
     </div>
 </body>
